@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
-gem 'rails', '~> 3.2.4'
+gem 'rails', '~> 3.2.6'
+gem 'mysql2'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -19,10 +20,6 @@ gem 'transitions', '0.0.9', :require => ["transitions", "active_record/transitio
 
 gem 'fastercsv', '1.5.3', :platforms => :ruby_18
 # (using standard csv lib if ruby version is 1.9)
-
-group :production do
-  gem 'pg'
-end
 
 group :development, :test do
   gem 'sqlite3'
